@@ -108,7 +108,7 @@ public class PanelContactos extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel2.setLayout(new java.awt.GridLayout(1, 0));
+        jPanel2.setLayout(new java.awt.GridBagLayout());
 
         btnAgregar.setFont(new java.awt.Font("Dubai", 0, 24)); // NOI18N
         btnAgregar.setText("Agregar");
@@ -117,7 +117,7 @@ public class PanelContactos extends javax.swing.JFrame {
                 btnAgregarActionPerformed(evt);
             }
         });
-        jPanel2.add(btnAgregar);
+        jPanel2.add(btnAgregar, new java.awt.GridBagConstraints());
 
         btnEditar.setFont(new java.awt.Font("Dubai", 0, 24)); // NOI18N
         btnEditar.setText("Editar");
@@ -126,7 +126,7 @@ public class PanelContactos extends javax.swing.JFrame {
                 btnEditarActionPerformed(evt);
             }
         });
-        jPanel2.add(btnEditar);
+        jPanel2.add(btnEditar, new java.awt.GridBagConstraints());
 
         btnEliminar.setFont(new java.awt.Font("Dubai", 0, 24)); // NOI18N
         btnEliminar.setText("Eliminar");
@@ -135,7 +135,7 @@ public class PanelContactos extends javax.swing.JFrame {
                 btnEliminarActionPerformed(evt);
             }
         });
-        jPanel2.add(btnEliminar);
+        jPanel2.add(btnEliminar, new java.awt.GridBagConstraints());
 
         btnGuardar.setFont(new java.awt.Font("Dubai", 0, 24)); // NOI18N
         btnGuardar.setText("Guardar");
@@ -144,12 +144,13 @@ public class PanelContactos extends javax.swing.JFrame {
                 btnGuardarActionPerformed(evt);
             }
         });
-        jPanel2.add(btnGuardar);
+        jPanel2.add(btnGuardar, new java.awt.GridBagConstraints());
 
         jPanel3.setBackground(new java.awt.Color(204, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Registro Personas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dubai", 0, 24))); // NOI18N
         jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.LINE_AXIS));
 
+        tblRegister.setBackground(new java.awt.Color(204, 255, 255));
         tblRegister.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
